@@ -1,0 +1,120 @@
+:root{
+    --corescura: #11013d;
+    --corclara:#1d1b1b;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+    background-image: linear-gradient(to right, var(--corclara), var(--corescura));
+    color: #fff;
+    text-align: center;
+    padding-top:30px;
+}
+
+#tasks-container{
+    width:500px;
+    margin:0 auto;
+}
+
+/* form */
+#tasks-header{
+    margin-top:40px;
+}
+#add-task-form{
+    display: flex;
+}
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid var(--corescura);
+    background-color:#fff;
+    color: var(--corescura);
+    padding:15px;
+    font-size: 18px;
+    width:100%;
+}
+#add-task-form input::placeholder{
+    color: var(--corescura);
+}
+#add-task-form input:focus{
+    outline:none;
+}
+#btn-add:hover{
+    background-color: var(--corescura);
+    color:rgb(0, 255, 13);
+    transition: 0.5s;
+}
+
+/* lista */
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+#task-list li{
+    display:flex;
+    height: 50px;
+    line-height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid var(--corescura);
+    background-color: #fff;
+    color: var(--corescura);
+    padding-left:15px;
+    margin-bottom:10px;
+    font-weight: inherit;
+}
+/* alinhando a descrição da tarefa a direita */
+#task-list li .task-title{
+    margin-right: auto;
+}
+
+#task-list li p{
+    font-size: 18px;
+}
+
+#task-list li i{
+    border: 20px;
+    padding: 2px;
+
+}
+
+.btn-done:hover{
+    color:var(--corclara);
+    font-size:30px;
+}
+
+.btn-remove:hover{
+    color:var(--corclara);
+    font-size:30px;
+}
+
+#task-list li.done{
+    background-color: var(--corescura);
+    color:#fff;
+    text-decoration:line-through;
+    transition: 0.5s;
+}
+
+#task-list li i{
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 13px;
+}
+
+.fa-2x {
+    font-size: 1.5em;
+}
+
+.fa-plus-circle::before {
+   padding: 8px;
+}
+
+.minha-imagem img { 
+    max-width: 500px;
+    max-height: 300px
+}
+.hide{
+   display: none !important;
+}
